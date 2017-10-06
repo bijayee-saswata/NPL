@@ -1,0 +1,9 @@
+body {
+    font-family: "Poppins";
+    background: #fafafa !important;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
