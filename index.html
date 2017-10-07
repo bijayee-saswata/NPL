@@ -15,6 +15,9 @@
         <link rel="stylesheet" href="css/animate.css">
 		<!-- media-queries -->
         <link rel="stylesheet" href="css/media-queries.css">
+        <!-- Modernizer Script for old Browsers -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+
 </head>
 <body id="body" data-spy="scroll" data-target="#navigation">
 	<!---PRELOADER-->
@@ -34,7 +37,7 @@
 					<!-- logo -->
                     <a class="navbar-brand" href="#body">
 						<h1 id="logo">
-							<img src="img/logo.jpg" alt="Brand" style="height: 50px">
+							<img src="img/logo.jpg" alt="Brand" style="height: 50px;">
 						</h1>
 					</a>
 					<!-- /logo -->
@@ -43,10 +46,10 @@
 				<!-- main nav -->
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
-                        <li class="current"><a href="#body">Home</a></li>
+                        <li><a href="#body">Home</a></li>
                         <li><a href="#" style="color: red;">LIVE</a></li>
                         <li><a href="#trending">Trending</a></li>
-                        <li><a href="#team">Teams</a></li>
+                        <li><a href="team.html">Teams</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="#contact">Contact</a></li>
                        
@@ -136,39 +139,8 @@
 	</section>
 		<a href="" class="btn btn-info navbar-btn navbar-right">More</a>
 </div><!--end container-->
-<hr>
 
-
-<div class="container">
-	<section>
-		<div class="page-header" id="team">
-			<center>
-			<h2>Teams</h2>
-			<div class="devider"><i class="fa fa-heart-o fa-sm"></i></div>
-			</center>
-		</div>
-				<div class="row">
-					<div class="col-sm-12" class="new">
-							<img src="./img/teams/barabati-cabbalos.jpeg" height="250px" width="250px" alt="Team Barabati-cabbalos" />
-							<img src="./img/teams/bonaigarh-eagles.jpeg" height="250px" width="250px" alt="Team Bonaigarh-eagles"/>
-							<img src="./img/teams/budharaja-tuskers.jpeg" height="250px" width="250px" alt="Team Budharaja-tuskers"/>
-							<img src="./img/teams/gada khorda.jpeg" height="250px" width="250px" alt="Team Gada khorda Lions"/>
-					</div>
-
-					<div class="col-sm-12" class="new">
-							<img src="./img/teams/jeypore.jpg" height="250px" width="250px" alt="Team Jeypore cobras"/>
-							<img src="./img/teams/junagarh-toros.jpeg" height="250px" width="250px" alt="Team Junagarh-toros"/>
-							<img src="./img/teams/raibania.jpeg" height="250px" width="250px" alt="Team Raibania tigers"/>
-							<img src="./img/teams/" height="250px" width="250px" alt="Team Jaugarh Dolphins"/>
-
-					</div>
-				</div>
-	</section>
-</div>
-
-		
-<hr>
-
+<!--team-->
 
 
 <div class="container">
@@ -179,7 +151,7 @@
 			<h3 class="feedback">We Would <i class="fa fa-heart-o fa-lg"></i> To Hear</h3>
 			</i></div>
 			</center>
-					<div class="col-sm-3  wow fadeInLeft animated" data-wow-duration="500ms">
+					<div class="col-sm-4  wow fadeInLeft animated" data-wow-duration="500ms">
 						<i style="padding-left: 100px; padding-top: 20px;" class="fa fa-map-marker fa-lg"></i>
 						<div class="contact-address">
 							<p>1461/7705 Ground Floor</p>
@@ -207,34 +179,28 @@
 					
 					</div>
 				</div>
-			<hr>
-
-
-
-
-			<!-- footer social links -->
-							<div class="col-sm-1 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
-								<ul class="footer-social">
-
-									<li><a href="https://naao.org.in/"><i class="fa fa-globe fa-2x"></i></a></li>
-									<!-- <li><a href="https://dribbble.com/themefisher"><i class="fa fa-dribbble fa-2x"></i></a></li> -->
-									<li><a href="https://www.@gmail.com"><i class="fa fa-google-plus fa-2x"></i></a></li>
-									<li><a href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x"></i></a></li>
-								</ul>
-							</div>
-							<!-- end footer social links -->
-
 
 		</div>
 	</section>
 </div>
 <footer id="footer" class="footer">
 			<div class="container">
-				<div class="row">
-					<div class="col-sm-3">
-						<i class="fa fa-copyright fa-lg"><small> 2017 Team NAAO </small></i>
-					</div>
+			
+				<div class=" wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
+						<center>
+					<!-- footer social links -->
+					
+						<ol class="list-inline">
+							<li><i class="fa fa-copyright fa-lg"><small> 2017 Team NAAO </small></i></li>
+							<li><a href="https://naao.org.in/"><i class="fa fa-globe fa-2x"></i></a></li>
+							<li><a href="https://www.@gmail.com"><i class="fa fa-google-plus fa-2x"></i></a></li>
+							<li><a href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x"></i></a></li>
+						</ol>
+						</center>
+					
+							<!-- end footer social links -->
 				</div>
+				
 			</div>
 </footer>
 	<!-- Essential jQuery Plugins
