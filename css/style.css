@@ -44,15 +44,43 @@ html {
 }
 .navbar-nav li a {
   border-top: 1px solid transparent;
+  color: white;
 }
 .navbar-nav li a.current,
 .navbar-nav li a:focus,
 .navbar-nav li a:hover {
-  background-color: transparent;
-  border-top: 1px solid #32B0EE;
+  
   color: teal;
+  opacity: 0.0;
 }
+ .awesome {
+      
+      
+      
+      width:100%;
+      
+      margin: 0 auto;
+      text-align: center;
+      
+      color:#313131;
+      font-size: 17px;
+      position: absolute;
+      -webkit-animation:colorchange 0.5s infinite alternate;
+      
+      
+    }
 
+    @-webkit-keyframes colorchange {
+      30% {
+        
+        color: yellow;
+      }
+      
+      100%
+      {
+        color:red;
+      }
+    }
 
 .page-header h2{
   padding-top: 40px;
@@ -60,6 +88,7 @@ html {
   color: teal;
   font-size: 28px;
   font-weight: 800;
+  text-transform: uppercase;
 }
 
 p {
@@ -163,10 +192,11 @@ p {
 }
 
 #contact {
-	padding-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .contact-address {
-  padding-top: 50px;
+  padding-top: 30px;
   color: black;
   text-align: left;
   font-family: inherit;
@@ -178,30 +208,24 @@ p {
 }
 
 .input{
-  padding-top: 45px;
+  padding-top: 0px;
 }
 .contact-form .form-control {
-  border-color: -moz-use-text-color -moz-use-text-color #cccccc;
-  border-radius: 0;
-  border-style: none none solid;
-  border-width: 0 0 1px;
-  box-shadow: none;
-  margin-bottom: 10px;
+  
 }
 .contact-form .input-group {
   width: 100%;
-  margin-top: 0%;
+ 
 }
 .contact-form .input-field {
+   margin-top: 30px;
   display: inline;
-  width: 48%;
+  width: 100%;
   float: left;
-  margin-right: 4%;
-  margin-left: 15%;
 }
 
 .contact-form #form-submit {
-  background: url("../img/envelop.png") no-repeat scroll 0 15px transparent;
+  background: 15px transparent;
   border: 0 none;
   color: #000;
   font-size: 16px;
@@ -210,25 +234,18 @@ p {
   text-align: right;
   width: 90px;
 }
-.footer-social {
-  padding-top: 15px;
-  margin-top: 0px;
-  display: flex;
-  flex-wrap: wrap;
 
-}
-
-.footer-social li a {
+.list-inline li a {
   color: black;
-  display: block;
-  margin-bottom: 20px;
+  padding-right: 20px;
 }
 .footer{
-  background-color: teal;
+  background-color: #00518E;
   margin-top: 30px;
   padding-top: 30px;
   padding-left: 80px;
   padding-bottom: 30px;
+ 
 }
 
 
