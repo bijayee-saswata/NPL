@@ -26,7 +26,7 @@ html {
 
 
 #navigation {
-  background-color: rgba(16, 22, 54, 0.2);
+ 
   border: 0 none;
   margin: 0;
   -webkit-transition: background-color 800ms linear;
@@ -50,8 +50,8 @@ html {
 .navbar-nav li a:focus,
 .navbar-nav li a:hover {
   
-  color: teal;
-  opacity: 0.0;
+  color: #000000;
+  opacity: 0.6;
 }
  .awesome {
       
@@ -83,18 +83,19 @@ html {
     }
 /* news event */
 .holder { 
+  position: center;
   background-color:#00518E;
-  width:300px;
+  width:225px;
   height:420px;
   overflow:hidden;
-  padding:10px;
+  
   font-family:Helvetica;
 }
 .holder .mask {
   position: relative;
   left: 0px;
-  top: 10px;
-  width:300px;
+  top: 20px;
+  width:225px;
   height:420px;
   overflow: hidden;
 }
@@ -106,16 +107,18 @@ html {
 }
 .holder ul li {
   padding:10px 0px;
+  text-align: left;
 }
 .holder ul li a {
-  color:darkred;
+  color:white;
   text-decoration:none;
+
 }
 
 .page-header h2{
   padding-top: 40px;
   font-family: normal;
-  color: teal;
+  color:#00518E;
   font-size: 28px;
   font-weight: 800;
   text-transform: uppercase;
@@ -128,10 +131,12 @@ p {
 }
 
 #slider {
-
+padding-top: 10px;
 }
 
 #slider .carousel-inner .item {
+
+ height: 100%;
 }
 
 .carousel-indicators li {
@@ -144,6 +149,7 @@ p {
   height: 8px;
   width: 8px;
 }
+
 .dot {
   cursor:pointer;
   height: 13px;
@@ -159,32 +165,8 @@ p {
   background-color: #717171;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
 
 .devider {
   margin-top: 20px;

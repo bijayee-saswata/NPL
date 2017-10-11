@@ -1,60 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <link rel="shortcut icon" href="img/logo.jpg">
 <head>
-	<title>NPL | NAAO Premier League</title>
-	<meta charset="utf-8"/>
-	<link href="./css/style.css" type="text/css" rel="stylesheet">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-		<!-- Twitter Bootstrap css -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-		<!-- jquery.fancybox  -->
-        <link rel="stylesheet" href="css/jquery.fancybox.css">
-		<!-- animate -->
-        <link rel="stylesheet" href="css/animate.css">
-		<!-- media-queries -->
-        <link rel="stylesheet" href="css/media-queries.css">
+  <title>NPL | NAAO Premier League</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./css/style.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+  </style>
 </head>
-<body id="body" data-spy="scroll" data-target="#my-navbar">
-	<!---PRELOADER-->
-		<!-- end preloader -->
-  <!--navbar-->
-	<header id="navigation" class="navbar-fixed-top navbar">
-            <div class="container">
-                <div class="navbar-header">
-                    <!-- responsive nav button -->
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <i class="fa fa-bars fa-2x"></i>
-                    </button>
-					<!-- /responsive nav button -->
+<body>
+ 
+ <div class="jumbotron">
 
-					<!-- logo -->
-                    <a class="navbar-brand" href="#body">
-						<h1 id="logo">
-							<img src="img/logo.jpg" alt="Brand" style="height: 50px">
-						</h1>
-					</a>
-					<!-- /logo -->
-                </div>
+</div>
+<nav class="navbar" style="background-color: #00518E">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html#body">Home</a></li>
+        <li><a href="#" class="awesome">Live</a></li>
+        <li><a href="index.html#trending">Trending</a></li>
+        <li><a href="team.html">Teams</a></li>
+        <li><a href="#body">Gallery</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
 
-				<!-- main nav -->
-                <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                    <ul id="nav" class="nav navbar-nav">
-                        <li><a href="index.html#body">Home</a></li>
-                        <li><a href="#" style="color: red;">LIVE</a></li>
-					    <li><a href="index.html#trending">Trending</a></li>
-					    <li><a href="index.html#team">Teams</a></li>
-						<li><a href="#body">Gallery</a></li>
-					    <li><a href="index.html#contact">Contact</a></li>
-                       
-                    </ul>
-                </nav>
-				<!-- /main nav -->
-
-            </div>
-        </header>
+    </div>
+  </div>
+</nav>
 <div class="container">
 	<section>
 		<div class="page-header" id="gallery">
