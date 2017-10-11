@@ -21,8 +21,7 @@ body {
 html {
     position: relative;
     min-height: 100%;
-}
-
+} 
 
 
 #navigation {
@@ -192,12 +191,18 @@ padding-top: 10px;
 .devider:after {
   left: 10px;
 }
-.container #team {
-  padding-top: 50px;
+#team {
+  padding-top: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
+}
+
+.panel-heading{
+  color: white;
+  font-family: algerian;
+  font-size: 20px;
 }
 .new {
   display: inline;
