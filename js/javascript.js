@@ -34,3 +34,5 @@ jQuery.fn.liScroll = function(settings) {
 $(function(){
     $("ul#ticker01").liScroll();
 });
+
+

@@ -15,32 +15,61 @@
       margin-bottom: 50px;
       border-radius: 0;
     }
-    
     /* Remove the jumbotron's default bottom margin */ 
      .jumbotron {
+        background: none;
       margin-bottom: 0;
-      background-color: white;
+      padding: 0%;
     }
-   
-  </style>
-</head>
-<body>
- 
- <div class="jumbotron">
+ .container a{
+    display: inline;
+ }
 
+ .con-width {
+    width: 100% !important;
+ }
+
+ .no-pad {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+ }
+ .neg-mar {
+    margin-right: 3px;
+ }
+ .hello{
+    font-size: 30px;
+    width: 100%;
+    position: relative;
+    left: 25% !important;
+ }
+  </style>
+ 
+</head>
+<body >
+    <div class="container con-width" style="background-image: url(img/blue-bg.jpg);">
+        <div class="container">
+ <div class="jumbotron no-pad"  >
+    
+        <a><img src="img/logo.jpg" height="96px" width="96px"></a>
+        <a href="" class="hello">NAAO PREMIER LEAGUE</a>
+        <a><img src="img/naao.jpeg" class="pull-right" height="96px" width="96px"></a>
+    </div>
+   </div>
+    
+   
 </div>
-<nav class="navbar" style="background-color: #00518E">
+
+<nav class="navbar" style="background-color: #24385B">
   <div class="container-fluid">
-    <div class="navbar-header">
+    <div class="navbar-header" >
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar" style="background-color: white" ></span>
+        <span class="icon-bar" style="background-color: white" ></span>
+        <span class="icon-bar" style="background-color: white" ></span>                        
       </button>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a href="#body">Home</a></li>
-        <li><a href="#" class="awesome">Live</a></li>
         <li><a href="#trending">Trending</a></li>
         <li><a href="team.html">Teams</a></li>
         <li><a href="gallery.html">Gallery</a></li>
@@ -97,7 +126,7 @@
                 <div class="well">
                     <center>
                         <div class="holder">
-                            <span style="font-size:20px;color: #DFF00A;"><i class="fa fa-newspaper-o"></i> News & Events </span>
+                            <span class="awesome" style="font-size:20px;color: #DFF00A;"><i class="fa fa-newspaper-o"></i> News & Events </span>
                             <ul id="ticker01">
                                 <li><span class="btn btn-default fa fa-calendar"> 08 oct</span><a href="index.html#trending"> Final match Bonaigarh Eagles vs Budharaja Tuskers</a></li>
                                 <li><span class="btn btn-default fa fa-calendar"> 07 oct</span><a href="index.html#trending"> 2nd Semifinal Budharaja Tuskers vs Barabati Cabbalos </a></li>
@@ -139,13 +168,21 @@
             </div>
             <div class="col-sm-4">
                 <blockquote>
-                    <img src="img/fnl-trophy.jpg" height="250px" width="320px">
-                <p> Wining trophy of NPL vs 1.0 with two final teams captain  </p>
+                    <img src="img/wng-trophy.jpg" height="250px" width="320px">
+                <p> Reciving Wining trophy of NPL vs 1.0 by the team Bonaigarh Eagles captain
+                </p>
                     <footer>NAAO Premier League</footer>
                 </blockquote>
             </div>
     </div><!--end row..1-->
     <div class="row">
+            <div class="col-sm-4">
+                <blockquote>
+                    <img src="img/fnl-trophy.jpg" height="250px" width="320px">
+                <p> Wining trophy of NPL vs 1.0 with two final teams captain  </p>
+                    <footer>NAAO Premier League</footer>
+                </blockquote>
+            </div>
             <div class="col-sm-4">
             <blockquote>
                 <img src="img/tm-brfmtch.jpg" height="250px" width="320px">
@@ -160,17 +197,7 @@
                     <footer>NAAO Premier League</footer>
             </blockquote>
             </div>
-             <div class="col-sm-4">
-            <blockquote>
-                <div class="col-sm-4">
-                <blockquote>
-                    <img src="img/trending/news.jpg" height="250px" width="320px">
-                    <p>Junagada taros beat raibania tigers</p>
-                    <footer>NAAO Premier League</footer>
-                </blockquote>
-            </div>
-            </blockquote>
-            </div>
+            
     </div><!--end row..2-->
     </section>
         <a href="" class="btn btn-primary navbar-btn navbar-right">More</a>
@@ -196,9 +223,10 @@
                             <p>Odisha IN </p>
                         </div>
                     </div>
+
                 <div class="email">
                     <div class="col-sm-8 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <form action="#" class="contact-form">
+                        <form action="mailto:saswat.sipun@gmail.com" class="contact-form" id="fr1">
                             <div class="input-field">
                                  <div class="col-sm-6">
                                     <span class="input-group-addon"><i class="fa fa-user"></i></span>
@@ -216,9 +244,11 @@
                                     <textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
                                    
                                 </div>
-                                 <div class="btna"><a href="" class="btn btn-default fa fa fa-send-o">send</a>
+                                 <div class="btna"><a href="mailto:saswat.sipun@gmail.com"" class="btn btn-default fa fa fa-send-o" id="bt1" value="click">send</a>
+
+                                </div>
+                              
                             </div>
-                        </div>
 
                         </form>
                     
@@ -228,7 +258,7 @@
         </div>
     </section>
 </div>
-<footer id="footer" class="footer">
+<footer id="footer" class="footer" style=" background-image: url(img/blue-bg.jpg);">
             <div class="container">
             
                 <div class=" wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
@@ -236,10 +266,10 @@
                     <!-- footer social links -->
                     
                         <ol class="list-inline">
-                            <li><i class="fa fa-copyright fa-lg"><small> 2017 Team NAAO </small></i></li>
-                            <li><a href="https://naao.org.in/"><i class="fa fa-globe fa-2x"></i></a></li>
-                            <li><a href="https://www.@gmail.com"><i class="fa fa-google-plus fa-2x"></i></a></li>
-                            <li><a href="https://www.facebook.com/groups/1775415089396422/"><i class="fa fa-facebook fa-2x"></i></a></li>
+                            <li><p style="color: white">&copy; 2017 Team NAAO </p></li>
+                            <li><a href="https://naao.org.in/"><i style="color: white" class="fa fa-globe fa-2x"></i></a></li>
+                            <li><a href="https://www.saswat.sipun@gmail.com"><i style="color: white" class="fa fa-google-plus fa-2x"></i></a></li>
+                            <li><a href="https://www.facebook.com/groups/1775415089396422/"><i style="color: white" class="fa fa-facebook fa-2x"></i></a></li>
                         </ol>
                         </center>
                     

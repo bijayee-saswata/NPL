@@ -19,28 +19,31 @@
     /* Remove the jumbotron's default bottom margin */ 
      .jumbotron {
       margin-bottom: 0;
-      background-color: white;
+    padding: 0;
     }
    
   </style>
 </head>
 <body>
  
- <div class="jumbotron">
-
+ <div class="jumbotron" style="background-image: url(img/blue-bg.jpg);">
+ 	<div class="container">
+ 		<img src="img/logo.jpg" height="96px" width="96px">
+        
+        <a class="navbar-right" ><img src="img/naao.jpeg" height="96px" width="96px"></a>
+    </div>
 </div>
-<nav class="navbar" style="background-color: #00518E">
+<nav class="navbar" style="background-color: #24385B;">
   <div class="container-fluid">
-    <div class="navbar-header">
+    <div class="navbar-header" >
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar" style="background-color: white" ></span>
+        <span class="icon-bar" style="background-color: white" ></span>
+        <span class="icon-bar" style="background-color: white" ></span>                        
       </button>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a href="index.html#body">Home</a></li>
-        <li><a href="#" class="awesome">Live</a></li>
         <li><a href="index.html#trending">Trending</a></li>
         <li><a href="team.html">Teams</a></li>
         <li><a href="#body">Gallery</a></li>
@@ -61,17 +64,18 @@
 	</section>
 </div>
 <div class="row">
-  <div class="col-md-4 wow fadeInLeft animated" data-wow-duration="500ms">
+  <div class="col-md-3 wow fadeInLeft animated" data-wow-duration="500ms">
     <div class="thumbnail">
       <a href="./img/commentry.jpg">
         <img src="./img/commentry.jpg" height="250px" width="300px" alt="Commentry box" style="width:100%">
+
         <div class="caption">
           <p></p>
         </div>
       </a>
     </div>
   </div>
-  <div class="col-md-4 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
+  <div class="col-md-3 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
     <div class="thumbnail">
       <a href="./img/mom-bt.jpg">
         <img src="./img/mom-bt.jpg" height="250px" width="300px" alt="Man Of the Match ..BT vs JC" style="width:100%">
@@ -81,7 +85,7 @@
       </a>
     </div>
   </div>
-  <div class="col-md-4 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
+  <div class="col-md-3 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
     <div class="thumbnail">
       <a href="./img/bfr-match.jpg">
         <img src="./img/bfr-match.jpg" height="250px" width="300px" alt="Team discussion before match start" style="width:100%">
@@ -91,7 +95,7 @@
       </a>
     </div>
   </div>
-	<div class="col-md-4 wow fadeInLeft animated" data-wow-duration="500ms">
+	<div class="col-md-3 wow fadeInLeft animated" data-wow-duration="500ms">
 	    <div class="thumbnail">
 	      <a href="./img/pitch-rpt.jpg">
 	        <img src="./img/pitch-rpt.jpg" height="250px" width="300px" alt="pitch report" style="width:100%">
@@ -101,7 +105,7 @@
 	      </a>
 	    </div>
 	</div>
-	<div class="col-md-4 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
+	<div class="col-md-3 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
 	    <div class="thumbnail">
 	      <a href="./img/exercise.jpg">
 	        <img src="./img/exercise.jpg" height="250px" width="300px" alt="team practice" style="width:100%">
@@ -111,7 +115,7 @@
 	      </a>
 	    </div>
 	</div>
-	<div class="col-md-4 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
+	<div class="col-md-3 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
 	    <div class="thumbnail">
 	      <a href="./img/bt-victory.jpg">
 	        <img src="./img/bt-victory.jpg" height="250px" width="300px" alt="Team victory of budharaja tusker" style="width:100%">
@@ -121,35 +125,81 @@
 	      </a>
 	    </div>
 	</div>
-	<div class="col-md-4 wow fadeInLeft animated" data-wow-duration="500ms">
+	<div class="col-md-3 wow fadeInLeft animated" data-wow-duration="500ms">
 	    <div class="thumbnail">
-	      
-	        
+	      <a href="./img/toss.jpg">
+	        <img src="./img/toss.jpg" height="250px" width="300px" alt="Toss" style="width:100%">
+	        <div class="caption">
+	          <p></p>
+	        </div>
+	      </a>
 	    </div>
 	</div>
-
+	<div class="col-md-3 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
+	    <div class="thumbnail">
+	      <a href="./img/jp-vs-bt.jpg">
+	        <img src="./img/jp-vs-bt.jpg" height="250px" width="300px" alt="JP vs BT" style="width:100%">
+	        <div class="caption">
+	          <p></p>
+	        </div>
+	      </a>
+	    </div>
+	</div>
+	<div class="col-md-3 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+	    <div class="thumbnail">
+	      <a href="./img/ex.jpg">
+	        <img src="./img/ex.jpg" height="250px" width="300px" alt="team exercise" style="width:100%">
+	        <div class="caption">
+	          <p></p>
+	        </div>
+	      </a>
+	    </div>
+	</div>
+<div class="col-md-3 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
+	    <div class="thumbnail">
+	      <a href="./img/BT.jpg">
+	        <img src="./img/BT.jpg" height="250px" width="300px" alt="Team victory of budharaja tusker" style="width:100%">
+	        <div class="caption">
+	          <p></p>
+	        </div>
+	      </a>
+	    </div>
+	</div>
 </div>>
-									
-						>
-								
 								
 							
-<div class="container">
-	<section>
-					
+<div class="container">			
 			<center>
-			<h2 style="padding-top: 40px;font-family: normal;color:#00518E;font-size: 28px;font-weight: 800;text-transform: uppercase;">Videos</h2>
+			<h2 style="padding-top: 2%;padding-bottom: 2%;font-family: normal;color:#00518E;font-size: 28px;font-weight: 800;text-transform: uppercase;">Videos</h2>
 			<div class="devider"><i class="fa fa-file-video-o fa-lg"></i></div>
 			</center>
-				<div class="row">
-					<div class="col-sm-12">
-						<video src="./videos/pitch-view.mp4" height="250px" width="320px" controls>video not supported</video>
-						<video src="./videos/l-victory-bt.mp4" height="250px" width="320px" controls>video not supported</video>
-					</div>
+
+				<div class="row" style="padding-bottom: 4%">
+					
+
 				</div>
-	</section>
 </div>
 
+<footer id="footer" class="footer" style=" background-image: url(img/blue-bg.jpg); ">
+            <div class="container">
+            
+                <div class=" wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                        <center>
+                    <!-- footer social links -->
+                    
+                        <ol class="list-inline">
+                            <li><p style="color: white">&copy; 2017 Team NAAO </p></li>
+                            <li><a href="https://naao.org.in/"><i style="color: white" class="fa fa-globe fa-2x"></i></a></li>
+                            <li><a href="https://www.@gmail.com"><i style="color: white" class="fa fa-google-plus fa-2x"></i></a></li>
+                            <li><a href="https://www.facebook.com/groups/1775415089396422/"><i style="color: white" class="fa fa-facebook fa-2x"></i></a></li>
+                        </ol>
+                        </center>
+                    
+                            <!-- end footer social links -->
+                </div>
+                
+            </div>
+</footer>
 
 	<!-- Essential jQuery Plugins
 		================================================== -->
