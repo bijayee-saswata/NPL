@@ -11,10 +11,7 @@
    <link rel="stylesheet" href="css/bootstrap.min.css">
   <style>
     /* Remove the navbar's default rounded borders and increase the bottom margin */ 
-    .navbar {
-      margin-bottom: 50px;
-      border-radius: 0;
-    }
+   
     /* Remove the jumbotron's default bottom margin */ 
      .jumbotron {
         background: none;
@@ -25,48 +22,31 @@
     display: inline;
  }
 
- .con-width {
-    width: 100% !important;
- }
 
- .no-pad {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
- }
- .neg-mar {
-    margin-right: 3px;
- }
- .hello{
-    font-size: 30px;
-    font-family: times new roman;
-    width: 100%;
-    position: relative;
-    left: 25% !important;
- }
   </style>
  
 </head>
 <body >
     <div class="container con-width" style="background-image: url(img/blue-bg.jpg);">
         <div class="container">
- <div class="jumbotron no-pad"  >
+       
     
-        <a href="#"><img src="img/logo.jpg" height="96px" width="96px"></a>
+        <a href="#"><img src="img/logo.jpg" class="image-responsive" height="96px" width="96px"></a>
         <a class="hello">NAAO PREMIER LEAGUE</a>
-        <a href="https://naao.org.in/" target="-blank"><img src="img/naao.jpeg" class="pull-right" height="96px" width="96px"></a>
-    </div>
+        <a href="https://naao.org.in/" target="-blank"><img src="img/naao.jpeg" class="pull-right image-responsive" height="96px" width="96px" ></a>
+    
    </div>
     
    
 </div>
 
-<nav class="navbar" style="background-color: #24385B">
+<nav class="navbar" style="background-color: #24385B;">
   <div class="container-fluid">
     <div class="navbar-header" >
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar" style="background-color: white" ></span>
-        <span class="icon-bar" style="background-color: white" ></span>
-        <span class="icon-bar" style="background-color: white" ></span>                        
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
       </button>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -133,7 +113,7 @@
                                 <li><span class="btn btn-default fa fa-calendar"> 07 oct</span><a href="index.html#trending"> 2nd Semifinal Budharaja Tuskers vs Barabati Cabbalos </a></li>
                                 <li><span class="btn btn-default fa fa-calendar"> 06 oct</span><a href="#"> 1st Semifinal Bonaigarh Eagles vs Junagarh Toros</a></li>
                                 <li><span class="btn btn-default fa fa-calendar"> 05 oct</span><a href="#"> 4th Knock out match Barabati Cabbalos vs Jaugarh Dolphins</a></li>
-                                <li><span class="btn btn-default fa fa-calendar"> 04 oct</span><a href="#"> 3rd Knock out match Jeypore Cobras vs Budharaja Tuskers</a></li>
+                                <li><span class="btn btn-default fa fa-calendar"> 04 oct</span><a href="#"> 3rd Knock out match Jeypore yCobras vs Budharaja Tuskers</a></li>
                                 <li><span class="btn btn-default fa fa-calendar"> 03 oct</span><a href="#"> 2nd Knock out match Raibania Tigers vs Junagarh Toros</a></li>
                                 <li><span class="btn btn-default fa fa-calendar"> 02 oct</span><a href="#"> 1st Knock out match Bonaigarh Eagles vs Gadakhurda Lions</a></li>
                             </ul>
@@ -163,14 +143,14 @@
             <div class="col-sm-4">
                 <blockquote>
                 <img src="img/wngtm-grp.jpg" height="250px" width="320px">
-                <p>Bonaigarh Eagles team with winning trophy of NPL vs 1.0 </p>
+                <p>Bonaigarh Eagles team with winning trophy of NPL 1.0 </p>
                     <footer>NAAO Premier League</footer>
                 </blockquote>
             </div>
             <div class="col-sm-4">
                 <blockquote>
                     <img src="img/wng-trophy.jpg" height="250px" width="320px">
-                <p> Reciving Wining trophy of NPL vs 1.0 by the team Bonaigarh Eagles captain
+                <p> Reciving Wining trophy of NPL 1.0 by the team Bonaigarh Eagles captain
                 </p>
                     <footer>NAAO Premier League</footer>
                 </blockquote>
@@ -180,7 +160,7 @@
             <div class="col-sm-4">
                 <blockquote>
                     <img src="img/fnl-trophy.jpg" height="250px" width="320px">
-                <p> Wining trophy of NPL vs 1.0 with two final teams captain  </p>
+                <p> Wining trophy of NPL 1.0 with two final teams captain  </p>
                     <footer>NAAO Premier League</footer>
                 </blockquote>
             </div>
@@ -201,11 +181,20 @@
             
     </div><!--end row..2-->
     </section>
-        <a href="" class="btn btn-primary navbar-btn navbar-right">More</a>
+   
 </div><!--end container-->
 
-<!--team-->
-
+ <div class="container">
+    <div class=" btn pull-right" id="accordion">
+                    <div class="btn btn-primary" ><a href="#collapse-1" data-toggle="collapse" data-parent="#accordion" style="color: white">More</a>
+                    </div>
+                    <div id="collapse-1" class="btn-collapse collapse">
+                        <div class="btn-body">
+                          Sorry no trending topics available
+                        </div>
+                    </div>
+    </div>
+</div>   
 
 <div class="container">
     <section>

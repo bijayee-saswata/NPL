@@ -23,7 +23,37 @@ html {
     position: relative;
     min-height: 100%;
 } 
+.icon-bar{
+  background-color: white;
+ }
+ /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+        background: none;
+      margin-bottom: 0;
+      padding: 0%;
+    }
+ .con-width {
+    width: 100% !important;
+ }
 
+ 
+ .neg-mar {
+    margin-right: 3px;
+ }
+ 
+ .hello{
+    font-size: 30px;
+    font-family: times new roman;
+    width: 100%;
+    position: relative;
+   
+    left: 25% !important; 
+ }
 
 #navigation {
  
