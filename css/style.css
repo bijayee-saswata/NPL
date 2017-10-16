@@ -111,7 +111,11 @@ html {
       }
     }
 /* news event */
+#news{
+  margin-top: 3rem;
+}
 .holder { 
+
   position: center;
   background-color:#24385B;
   width:225px;
@@ -158,13 +162,13 @@ p {
 }
 
 }
-
-#slider {
-padding-top: 10px;
+#slide{
+  
 }
 
-#slider .carousel-inner .item {
 
+#slider .carousel-inner .item {
+margin-top: 3rem;
  height: 100%;
 }
 
@@ -238,6 +242,10 @@ padding-top: 10px;
   display: inline;
 }
 
+#trending{
+padding-top: 5rem;
+
+}
 #contact {
   padding-top: 20px;
   padding-bottom: 20px;

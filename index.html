@@ -40,7 +40,7 @@
    
 </div>
 
-<nav class="navbar" style="background-color: #24385B;">
+<nav class="navbar" id="mainnav" style="background-color: #24385B;">
   <div class="container-fluid">
     <div class="navbar-header" >
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -50,7 +50,7 @@
       </button>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#body">Home</a></li>
+        <li class="current"><a href="#body">Home</a></li>
         <li><a href="#trending">Trending</a></li>
         <li><a href="team.html">Teams</a></li>
         <li><a href="gallery.html">Gallery</a></li>
@@ -103,7 +103,7 @@
                 </div> <!-- End Wrapper for slides -->
                  
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3" id="news">
                 <div class="well">
                     <center>
                         <div class="holder">
@@ -124,6 +124,7 @@
         </div><!--end row-->
     </div><!--end of container-->
 </section>
+<section>
 <div class="container"  id="trending">
     <section>
         <div class="page-header">
@@ -195,7 +196,7 @@
                     </div>
     </div>
 </div>   
-
+</section>
 <div class="container">
     <section>
         <div class="page-header" id="contact">
@@ -287,5 +288,6 @@
         <!-- jquery.appear -->
         <script src="js/jquery.appear.js"></script>
         <script src="js/javascript.js"></script>
+         <script src="js/fixnav.js"></script>
 </body>
 </html>
