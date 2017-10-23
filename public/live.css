@@ -1,0 +1,39 @@
+.mainDiv{
+	background-color: #E5E6E9;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+#battel {
+
+	padding-top: 5em;
+}
+#battel img{
+height: 50px;
+width: 50px;
+}
+.img-valign {
+  vertical-align: middle;
+  display: inline-block;
+}
+.img-valign p{
+	background-color: #E5E6E9;
+}
+#batsman{
+	padding-top: 3em;
+}
+#batsman  h5, #bowler h5{
+
+background-color: #E5E6E9;
+}
+#batsman  h4, #bowler h4{
+
+color: blue;
+}
+#recent{
+	padding-top: 3em;
+}
+.ball li{
+border-radius: 50%;	
+height: 100%;
+}

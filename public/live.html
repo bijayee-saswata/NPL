@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="shortcut icon" href="img/logo.jpg">
+<head>
+  <title>NPL | NAAO Premier League</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./css/style.css" type="text/css" rel="stylesheet">
+  <link href="./css/media.css" type="text/css" rel="stylesheet">
+  <link href="./live.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+
+ .container a{
+    display: inline;
+ }
+
+
+  </style>
+<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-database.js"></script>
+</head>
+<body >
+    <div class="container con-width" style="background-image: url(img/blue-bg.jpg);">
+        <div class="container">
+            <center>
+        <img class="img-valign pull-left" src="img/logo.jpg" />
+        <span class= "hello">NAAO PREMIER LEAGUE</span>
+            <img href="" class="img-valign pull-right" src="img/naao.jpeg" />
+            </center>
+        </div>
+    </div>
+
+<nav class="navbar" id="mainnav" style="background-color: #24385B;">
+  <div class="container-fluid">
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="current"><a href="#">Home</a></li>
+          <li><a href="#trending">Trending</a></li>
+          <li><a href="team.html">Teams</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- live layout -->
+<div class="mainDiv " align="right">
+  <h2 id="matchHeading" align="left"> Match Info npl</h2>
+</div>
+
+
+<div class="container" id="battel">
+  <h3 class="img-valign pull-left">BC  </h3>
+  <img class="img-valign" src="./img/teams/barabati-cabbalos.jpeg">
+  <h3 class="img-valign" id="score">  200/5 (23.5/30 ovs)</h3>
+   <h3 class="img-valign pull-right"> BE </h3>
+  <img class="img-valign pull-right" src="./img/teams/bonaigarh-eagles.jpeg">
+</div>
+
+<div class="container" id="batsman">
+  <h5 class="img-valign">Batsmen</h5>
+  <p class="img-valign pull-right">B</p>
+  <p class="img-valign pull-right">R</p>
+  <h4 id="batsman1"> virat kohli </h4>
+  <h4 id="batsman2"> M.S dhoni </h4>
+</div>
+
+<div class="container" id="bowler">
+  <h5>Bowler</h5>
+  <h4 id="bowler1"> Bhubaneswar </h4>
+</div>
+
+<div class="container" id="recent">
+  <ul class="ball">
+    <li class="btn btn-default"></li>
+    <li class="btn btn-default"></li>
+    <li class="btn btn-default"></li>
+    <li class="btn btn-default"></li>
+    <li class="btn btn-default"></li>
+    <li class="btn btn-default"></li>
+  </ul>
+ 
+</div>
+
+<footer id="footer" class="footer" style=" background-image: url(img/blue-bg.jpg);">
+            <div class="container">
+            
+                <div class=" wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                        <center>
+                    <!-- footer social links -->
+                    
+                        <ol class="list-inline social">
+                            <li><p style="color: white">&copy; 2017 Team NAAO </p></li>
+                            <li><a href="https://naao.org.in/"><i style="color: white" class="fa fa-globe "></i></a></li>
+                            <li><a href="https://www.@gmail.com"><i style="color: white" class="fa fa-google-plus"></i></a></li>
+                            <li><a href="https://www.facebook.com/groups/1775415089396422/"><i style="color: white" class="fa fa-facebook"></i></a></li>
+                        </ol>
+                        </center>
+                    
+                            <!-- end footer social links -->
+                </div>
+                
+            </div>
+</footer>
+
+<script src="live.js"></script>
+</body>
+</html>

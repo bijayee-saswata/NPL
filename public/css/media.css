@@ -1,0 +1,44 @@
+@media only screen and (min-width: 320px) and (max-width: 480px){
+  .con-width{
+    width:100%;
+    height: 100%;
+  }
+  .con-width img{
+width: 3em;
+height: 3em;
+}
+.hello{
+    font-size: 1em;
+    font-family: times new roman;
+     color: #2A74F6;
+ }
+ #news{
+  margin: 3em;
+}
+ .holder { 
+  position: relative;
+  background-color:#24385B;
+  width:100%;
+  height:30em;
+  overflow:hidden;
+  
+  font-family:Helvetica;
+}
+ .holder .mask {
+  position: relative;
+  left: 0px;
+  top: 20px;
+  width:100%;
+  height:30em;
+
+  overflow: hidden;
+}
+.footer{
+  margin-top: 3em;
+  width: 100%;
+}
+.social .fa{
+  font-size: 1em;
+}
+}
+
