@@ -6,10 +6,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="./css/style.css" type="text/css" rel="stylesheet">
+  <link href="./css/live.css" type="text/css" rel="stylesheet">
   <link href="./css/media.css" type="text/css" rel="stylesheet">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/animate.css">
    <link rel="stylesheet" href="css/bootstrap.min.css">
+  
   <style>
 
  .container a{
@@ -18,7 +20,8 @@
 
 
   </style>
- 
+ <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-database.js"></script>
 </head>
 <body >
     <div class="container con-width" style="background-image: url(img/blue-bg.jpg);">
@@ -42,6 +45,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="current"><a href="#">Home</a></li>
+        <li><a href="live.html" class="awesome">Live</a></li>
         <li><a href="#trending">Trending</a></li>
         <li><a href="team.html">Teams</a></li>
         <li><a href="gallery.html">Gallery</a></li>
@@ -52,7 +56,37 @@
   </div>
 </nav>
 
-   
+<!--live score-->
+  <div class="container" id="battel1">
+    <div class="col-sm-1 col-xs-12">
+    <span style="color: red;font-weight: bold;">Live</span>
+    </div>
+    <div class="col-sm-5 col-xs-12" style="background-color: #E5E6E9">
+    <center>
+  <span class="img-valign pull-left" id="batTeam"></span>
+
+   <a href="live.html" class="img-valign pull-left" id="score"></a>
+
+  <span class="img-valign pull-right" id="bowTeam"></span>
+ 
+</center>
+</div>
+<div class="col-sm-1 col-xs-12">
+    <span style="color: green;font-weight: bold;">Upcoming</span>
+</div>
+<div class="col-sm-5 col-xs-12" style="background-color: #E5E6E9">
+    <center>
+  <span class="img-valign pull-left" id="batTeam2"></span>
+
+   <a href="live.html" class="img-valign pull-left" id="score2"></a>
+
+  <span class="img-valign pull-right" id="bowTeam2"></span>
+ 
+</center>
+</div>
+</div>
+
+
                 <!-- /main nav -->
 <section id="slider">
     <div class="container">
@@ -98,10 +132,10 @@
                 <div class="well">
                     <center>
                         <div class="holder">
-                            <span class="awesome" style="font-size:20px;color: #DFF00A;"><i class="fa fa-newspaper-o"></i> News & Events </span>
+                            <span  style="font-size:20px;color: #DFF00A;"><i class="fa fa-newspaper-o"></i> News & Events </span>
                             <ul id="ticker01">
                                 <li><span class="btn btn-default fa fa-calendar"> 08 oct</span><a href="index.html#trending"> Final match Bonaigarh Eagles vs Budharaja Tuskers</a></li>
-                                <li><span class="btn btn-default fa fa-calendar"> 07 oct</span><a href="index.html#trending"> 2nd Semifinal Budharaja Tuskers vs Barabati Cabbalos </a></li>
+                                <li><span class="btn btn-default fa fa-calendar"> 07 oct</span><a href=""> 2nd Semifinal Budharaja Tuskers vs Barabati Cabbalos </a></li>
                                 <li><span class="btn btn-default fa fa-calendar"> 06 oct</span><a href="#"> 1st Semifinal Bonaigarh Eagles vs Junagarh Toros</a></li>
                                 <li><span class="btn btn-default fa fa-calendar"> 05 oct</span><a href="#"> 4th Knock out match Barabati Cabbalos vs Jaugarh Dolphins</a></li>
                                 <li><span class="btn btn-default fa fa-calendar"> 04 oct</span><a href="#"> 3rd Knock out match Jeypore yCobras vs Budharaja Tuskers</a></li>
@@ -260,19 +294,7 @@
                 
             </div>
 </footer>
-<script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyAYk2ZRUUmoLVYBNmwFpZ_t5oHGGozFLHY",
-    authDomain: "naaopl-fc3e2.firebaseapp.com",
-    databaseURL: "https://naaopl-fc3e2.firebaseio.com",
-    projectId: "naaopl-fc3e2",
-    storageBucket: "",
-    messagingSenderId: "984552710496"
-  };
-  firebase.initializeApp(config);
-</script>
+
     <!-- Essential jQuery Plugins
         ================================================== -->
         <!-- Main jQuery -->
@@ -290,6 +312,8 @@
         <script src="js/jquery.appear.js"></script>
         <script src="js/javascript.js"></script>
          <script src="js/fixnav.js"></script>
+         <script src="js/live.js"></script>
+
 
 </body>
 </html>

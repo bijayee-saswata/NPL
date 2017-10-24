@@ -89,15 +89,8 @@ height: 6em;
 }
  .awesome {
       
-      
-      
-      width:100%;
-      
-      margin: 0 auto;
-      text-align: center;
-      
       color:#313131;
-      font-size: 17px;
+     
       position: all;
       -webkit-animation:colorchange 0.5s infinite alternate;
       
@@ -105,13 +98,13 @@ height: 6em;
     }
 
     @-webkit-keyframes colorchange {
-      30%{
-        color: red;
+      50%{
+        color: yellow;
       }
      
       100%
       {
-        color:#39FBD9;
+        color:red;
       }
     }
 /* news event */
@@ -310,3 +303,17 @@ padding-top: 5rem;
 .social .fa{
   font-size: 1.5em;
 }
+
+#battel1 a{
+  padding-left: 1em;
+} 
+#battel1 span{
+  font-size: 1em;
+}
+/*
+#battel1 img{
+  margin-left: 1em;
+  margin-right: 1em;
+height: 3.2em;
+width: 3.6em;
+} */

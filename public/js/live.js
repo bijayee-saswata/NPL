@@ -17,7 +17,11 @@
 
 }());
 
-
+var matchHeading=document.getElementById("matchHeading");
+var matchHeadingRef=firebase.database().ref().child("Heading");
+matchHeadingRef.on('value',function(datasnapshot){
+	matchHeading.innerText=datasnapshot.val();
+});
 
 
 

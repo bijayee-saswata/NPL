@@ -41,4 +41,22 @@ height: 3em;
   font-size: 1em;
 }
 }
-
+#battel1 span{
+  font-size: 1em;
+}
+#battel1 p{
+  font-size: 1em;
+}
+#battel1 img{
+   margin-left:0;
+  margin-right: 0;
+  height: 1.5em;
+  width: 1.5em;
+}
+#battel a{
+  font-size: 1em;
+   padding-top:0;
+  padding-left: 0;
+}
+.img-valign {
+  vertical-align: left;

@@ -6,7 +6,9 @@
 	font-weight: bold;
 
 }
-
+.mainDiv h2{
+	font-size: 2em;
+}
 #battel {
 
 	padding-top: 3em;
@@ -14,16 +16,12 @@
 #battel img{
 height: 3.2em;
 width: 3.6em;
- margin-left: 1em;
-  margin-right: 1em;
 }
 .img-valign {
   vertical-align: middle;
   display: inline-block;
 }
-#bowTeam h3{
-	padding-right: 1em;
-}
+
 #batsman{
 	padding-top: 3em;
 }
@@ -46,11 +44,6 @@ background-color: #E5E6E9;
 
 
 @media only screen and (min-width: 320px) and (max-width: 480px){
-	.venue{
-	font-family: times new roman;
-	font-weight: bold;
-	font-size: 0.5em;
-}
 	#battel h3{
 		font-size: 1em;
 	}
