@@ -23,7 +23,11 @@ matchHeadingRef.on('value',function(datasnapshot){
 	matchHeading.innerText=datasnapshot.val();
 });
 
-
+var batsman=document.getElementById("batsman");
+var batsmanRef=firebase.database().ref().child("batsman");
+batsmanRef.on('value',function(datasnapshot){
+  batsman.innerText=datasnapshot.val();
+}); 
 
 var batTeam=document.getElementById("batTeam");
 var batTeamRef=firebase.database().ref().child("batTeam");
@@ -107,39 +111,23 @@ bowler1W.innerText=datasnapshot.val();
 });
 
 /*-------------recent balls---------*/
+const recent_ball=document.getElementById("recent_ball");
+const recent_ballRef=firebase.database().ref().child("recent_ball");
+const ulList=document.getElementById("list");
+const listRef=recent_ballRef.child('ball');
 
-var rb1=document.getElementById("rb1");
-var rb1Ref=firebase.database().ref().child("rb1");
-rb1Ref.on('value',function(datasnapshot){
-rb1.innerText=datasnapshot.val();
+listRef.on("child_added", function (datasnapshot) {
+  const li=document.creatElement("li");
+  li.innerText=datasnapshot.val();
+  li.id=datasnapshot.key;
+  ulList.appendChild(li); 
 });
 
-var rb2=document.getElementById("rb2");
-var rb2Ref=firebase.database().ref().child("rb2");
-rb2Ref.on('value',function(datasnapshot){
-rb2.innerText=datasnapshot.val();
-});
+listRef.on("child_changed" function (datasnapshot) {
+  const liChanged=document.getElementById(datasnapshot.key);
+liChanged.innerText=datasnapshot.val();});
 
-var rb3=document.getElementById("rb3");
-var rb3Ref=firebase.database().ref().child("rb3");
-rb3Ref.on('value',function(datasnapshot){
-rb3.innerText=datasnapshot.val();
-});
+listRef.on("child_removed" function (datasnapshot) {
+   const liToRemove=document.getElementById(datasnapshot.key);
 
-var rb4=document.getElementById("rb4");
-var rb4Ref=firebase.database().ref().child("rb4");
-rb4Ref.on('value',function(datasnapshot){
-rb4.innerText=datasnapshot.val();
-});
-
-var rb5=document.getElementById("rb5");
-var rb5Ref=firebase.database().ref().child("rb5");
-rb5Ref.on('value',function(datasnapshot){
-rb5.innerText=datasnapshot.val();
-});
-
-var rb6=document.getElementById("rb6");
-var rb6Ref=firebase.database().ref().child("rb6");
-rb6Ref.on('value',function(datasnapshot){
-rb6.innerText=datasnapshot.val();
-});
+liToRemove.remove();});

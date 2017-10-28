@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/animate.css">
    <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <style>
 
@@ -20,7 +21,7 @@
 
 
   </style>
- <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-database.js"></script>
 </head>
 <body >
@@ -91,7 +92,7 @@
 <section id="slider">
     <div class="container">
         <div class="row">
-            <div class="col-sm-9">
+            <div class="col-sm-9 col-xs-12">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
                     <!-- Indicators bullet -->
@@ -128,7 +129,7 @@
                 </div> <!-- End Wrapper for slides -->
                  
             </div>
-            <div class="col-sm-3" id="news">
+            <div class="col-sm-3 col-xs-12" id="news">
                 <div class="well">
                     <center>
                         <div class="holder">
@@ -242,28 +243,31 @@
 
                 <div class="email">
                     <div class="col-sm-8 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <form action="mailto:saswat.sipun@gmail.com" class="contact-form" id="fr1">
+                        <form action="https://formspree.io/saswat.sipun@gmail.com"
+      method="POST" class="contact-form" id="fr1">
                             <div class="input-field">
-                                 <div class="col-sm-6">
-                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                    <input type="text" name="name" id="name" placeholder="Name" class="form-control">
-                                </div>
+                                 <div class="col-sm-6"><div class="input-group">
+                                    <span class="input-group-addon"><i style="color: #24385B;" class="fa fa-address-book"></i></span>
+                                    <input id="name" type="text" class="form-control" name="name" placeholder="Name">
+                                
+                                </div></div>
                            
-                                 <div class="col-sm-6">
-                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                 <div class="col-sm-6"><div class="input-group">
+                                    <span class="input-group-addon"><i style="color: #24385B;" class="fa fa-envelope"></i></span>
                                      <input id="email" type="text" class="form-control" name="email" placeholder="Email">
-                                </div>
+                                </div></div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-pencil-square-o"></i></span> 
+                                    <span class="input-group-addon"><i style="color: #24385B;" class="fa fa-pencil-square-o"></i></span> 
                                     <textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
                                    
                                 </div>
-                                 <div class="btna"><a href="mailto:saswat.sipun@gmail.com"" class="btn btn-default fa fa fa-send-o" id="bt1" value="click">send</a>
+                                <div class="btna"><i class= "fa fa-paper-plane"><input type="submit" value="Send" ></i></div>
+                                 
 
                                 </div>
-                              
+                               
                             </div>
 
                         </form>
@@ -283,9 +287,9 @@
                     
                         <ol class="list-inline social">
                             <li><p style="color: white">&copy; 2017 Team NAAO </p></li>
-                            <li><a href="https://naao.org.in/"><i style="color: white" class="fa fa-globe "></i></a></li>
-                            <li><a href="https://www.@gmail.com"><i style="color: white" class="fa fa-google-plus"></i></a></li>
-                            <li><a href="https://www.facebook.com/groups/1775415089396422/"><i style="color: white" class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://naao.org.in/" style="color: white" class="fa fa-globe "></a></li>
+                            <li><a href="https://www.@gmail.com" style="color: white" class="fa fa-google-plus"></a></li>
+                            <li><a href="https://www.facebook.com/groups/1775415089396422/" style="color: white" class="fa fa-facebook"></a></li>
                         </ol>
                         </center>
                     

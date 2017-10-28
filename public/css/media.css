@@ -13,9 +13,10 @@ height: 3em;
      color: #2A74F6;
  }
  #news{
-  margin: 3em;
-}
+  padding: 15%;
+ }
  .holder { 
+
   position: relative;
   background-color:#24385B;
   width:100%;
@@ -38,7 +39,10 @@ height: 3em;
   width: 100%;
 }
 .social .fa{
-  font-size: 1em;
+  font-size: 90%;
+}
+.social p{
+  font-size: 90%;
 }
 }
 #battel1 span{
@@ -59,4 +63,30 @@ height: 3em;
   padding-left: 0;
 }
 .img-valign {
-  vertical-align: left;
+  vertical-align: left;}
+
+  /*---------tablet view----------*/
+  @media only screen and (min-width: 768px) and (max-width: 1024px)
+  {
+
+
+ .holder { 
+
+  position: relative;
+  background-color:#24385B;
+  width:100%;
+  height:18em;
+  overflow:hidden;
+  
+  font-family:Helvetica;
+}
+ .holder .mask {
+  position: relative;
+  left: 0px;
+  top: 20px;
+  width:100%;
+  height:18em;
+
+  overflow: hidden;
+}
+  }
