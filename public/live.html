@@ -4,7 +4,7 @@
 <head>
   <title>NPL | NAAO Premier League</title>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="15" />
+  <!--<meta http-equiv="refresh" content="15" /> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="./css/style.css" type="text/css" rel="stylesheet">
   <link href="./css/media.css" type="text/css" rel="stylesheet">
@@ -75,24 +75,17 @@
 <div class="container">
 <span id="toss" style="color: red"> BB won the toss and choose to bat</span>
 </div>
-<div class="container" id="batsman">
-  <div class="row">
-    <div class="col-xs-6">
-      <h5>Batsmen</h5>
-      <h4 id="batsman1"> </h4>
-      <h4 id="batsman2"></h4>
-    </div>
-    <div class="col-xs-3">
-      <h5 class="img-valign " >R</h5>
-      <h4 id="batsman1R"> </h4>
-      <h4 id="batsman2R"> </h4>
-    </div>
-    <div class="col-xs-3">
-      <h5 class="img-valign ">B</h5>
-      <h4 id="batsman1B"> </h4>
-      <h4 id="batsman2B"> </h4>
-    </div>
-  </div>
+<div class="container">Batsman
+  <table id="batsmans">
+  <tr class="rwd-table">
+    
+    <th>Name</th>
+    <th>Run</th>
+    <th>Ball</th>
+  
+  </tr>
+
+</table>
 </div>
 <div class="container" id="bowler">
   <div class="row">
@@ -111,12 +104,13 @@
   </div>
 </div>
 
-<div class="container" id="recent_ball">
+<div class="container" id="balls">
+  
  
  
 </div>
-<div class="container">
-  <input type="button" value="Refresh" onClick="window.location.reload()"><i  class= "fa fa-refresh"></i>
+<div class="container refresh">
+  <input type="button" value="Refresh" onClick="window.location.reload()"><i class= "fa fa-refresh" ></i>
 
 </div>
 

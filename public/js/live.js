@@ -48,47 +48,17 @@ scoreRef.on('value',function(datasnapshot){
 });
 
 /*--------batsman1-----------*/
+var objRef=firebase.database().ref().child("batsman");
 
-
-var batsman1=document.getElementById("batsman1");
-var batsman1Ref=firebase.database().ref().child("batsman1");
-batsman1Ref.on('value',function(datasnapshot){
-batsman1.innerText=datasnapshot.val();
-});
-
-var batsman1B=document.getElementById("batsman1B");
-var batsman1BRef=firebase.database().ref().child("batsman1B");
-batsman1BRef.on('value',function(datasnapshot){
-batsman1B.innerText=datasnapshot.val();
-});
-
-var batsman1R=document.getElementById("batsman1R");
-var batsman1RRef=firebase.database().ref().child("batsman1R");
-batsman1RRef.on('value',function(datasnapshot){
-batsman1R.innerText=datasnapshot.val();
+/*---------new ball-------*/
+objRef.on("child_added", snap=>{
+var name=snap.child("name").val();
+var run=snap.child("run").val();
+var ball=snap.child("ball").val();
+$("#batsmans").append("<tr><td>"+name+"</td><td>"+run+"</td><td>"+ball+"</td></tr>"); 
 });
 
 
-/*--------batsman2-----------*/
-
-
-var batsman2=document.getElementById("batsman2");
-var batsman2Ref=firebase.database().ref().child("batsman2");
-batsman2Ref.on('value',function(datasnapshot){
-batsman2.innerText=datasnapshot.val();
-});
-
-var batsman2B=document.getElementById("batsman2B");
-var batsman2BRef=firebase.database().ref().child("batsman2B");
-batsman2BRef.on('value',function(datasnapshot){
-batsman2B.innerText=datasnapshot.val();
-});
-
-var batsman2R=document.getElementById("batsman2R");
-var batsman2RRef=firebase.database().ref().child("batsman2R");
-batsman2RRef.on('value',function(datasnapshot){
-batsman2R.innerText=datasnapshot.val();
-});
 
 /*---------bowler1---------*/
 
@@ -111,23 +81,22 @@ bowler1W.innerText=datasnapshot.val();
 });
 
 /*-------------recent balls---------*/
-const recent_ball=document.getElementById("recent_ball");
-const recent_ballRef=firebase.database().ref().child("recent_ball");
-const ulList=document.getElementById("list");
-const listRef=recent_ballRef.child('ball');
+var rootRef=firebase.database().ref().child("recent_ball");
 
-listRef.on("child_added", function (datasnapshot) {
-  const li=document.creatElement("li");
-  li.innerText=datasnapshot.val();
-  li.id=datasnapshot.key;
-  ulList.appendChild(li); 
+/*---------new ball-------*/
+rootRef.on("child_added", snap=>{
+var data=snap.child("data").val();
+$("#balls").append("<li>"+data+"</li>"); 
 });
 
-listRef.on("child_changed" function (datasnapshot) {
-  const liChanged=document.getElementById(datasnapshot.key);
-liChanged.innerText=datasnapshot.val();});
+/*---------to change value-----*/
+rootRef.on("child_changed", snap=>{
+var data=snap.child("data").val();
+});
 
-listRef.on("child_removed" function (datasnapshot) {
-   const liToRemove=document.getElementById(datasnapshot.key);
+/*---------to remove---------*/
+rootRef.on("child_removed", snap=>{
+var data=snap.child("data").val();
+data.remove();
+});
 
-liToRemove.remove();});

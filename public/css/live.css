@@ -24,24 +24,32 @@ width: 3.6em;
 #bowTeam h3{
 	padding-right: 1em;
 }
-#batsman{
+#batsmans{
 	padding-top: 3em;
 }
-#batsman  h5, #bowler h5{
-
-
+#batsmans th{ 
+	padding-right: 100%;
+     
 }
-#batsman  h4, #bowler h4{
-
-color: blue;
-}
-#recent{
+#balls {
 	padding-top: 3em;
+	vertical-align: middle;
 }
-.ball li{
-border-radius: 50%;	
-height: 100%;
+.ball{
+
+}
+#balls li{
+margin-right: 1%;
+text-align: center;
+display: inline-block;
+border-radius: 40%;
+width: 3%;
+font-weight: bold;
 background-color: #E5E6E9;
+}
+.refresh{
+	padding-top: 2%;
+	border-radius: 10%;
 }
 
 
