@@ -4,7 +4,8 @@
 <head>
   <title>NPL | NAAO Premier League</title>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="15" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="refresh" content="25" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="./css/style.css" type="text/css" rel="stylesheet">
   <link href="./css/media.css" type="text/css" rel="stylesheet">
@@ -20,6 +21,7 @@
 
 
   </style>
+  <script src="js/modernizr-2.6.2.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-database.js"></script>
 </head>
@@ -59,53 +61,49 @@
 <!-- match heading-->
 <div class="container">
 <div class="mainDiv ">
-  <h2 class="venue"> Barabati Cabbalos vs Bonaigarh Eagles (Live from Nimpur sports club,cuttack)</h2>
+  <h2 id="matchHeading"></h2>
+  <span id="venue"></span>
 </div>
 </div>
 
 <!--t1 vs t2 info-->
 <div class="container" id="battel">
   <h3 class="img-valign pull-left" id="batTeam"></h3>&nbsp;
-  <img class="img-valign" src="./img/teams/barabati-cabbalos.jpeg">&nbsp;
    <h3 class="img-valign" id="score"></h3>
   <h3 class="img-valign pull-right" id="bowTeam"></h3>
-  <img class="img-valign pull-right" src="./img/teams/bonaigarh-eagles.jpeg">
 </div>
 
 <div class="container">
-<span id="toss" style="color: red"> BB won the toss and choose to bat</span>
+<span id="toss" style="color: red"> </span>
 </div>
-<div class="container">
-  <table id="batsmans" class="table">
-    <tr>
-    <th class="pull-left">Batsman</th>
-    <th class="pull-center">R</th>
-    <th class="pull-right">B</th>
-    </tr>
+<div class="container" id="record">
+      <table>
+        <thead id="Bhead">
+         
+        </thead>
+        <thead id="batsmans">  
+         
+        </thead>
+        <thead id="Bohead">
+          
+        </thead>
+        <thead id="bowlers">
+         
+        </thead>
+      </table> 
+</div>
 
-  </table>
-</div>
-<div class="container">
-  <table id="bowlers" class="table">
-    <tr>
-    <th class="pull-left">Bowler</th>
-    <th class="pull-center">O</th>
-    <th class="pull-right">W</th>
-    </tr>
-
-  </table>
-</div>
 <div class="container" id="balls">
   
  <!--database linked-->
  
 </div>
-<div class="container refresh">
-  <input type="button" value="Refresh" onClick="window.location.reload()"><i class= "fa fa-refresh" ></i>
+<div class="container">
+  <p id="refresh" onClick="window.location.reload()"></p>
 
 </div>
 
-<footer id="footer" class="footer" style=" background-image: url(img/blue-bg.jpg);">
+<footer id="footer" class="footer" style=" background-image: url(img/blue-bg.jpg); >
             <div class="container">
             
                 <div class=" wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
@@ -136,10 +134,7 @@
         <script src="js/jquery.fancybox.pack.js"></script>
         <!-- jquery.mixitup.min -->
         <script src="js/jquery.mixitup.min.js"></script>
-        <!-- jquery.parallax -->
-        <script src="js/jquery.parallax-1.1.3.js"></script>
-        <!-- jquery.countTo -->
-        <script src="js/jquery-countTo.js"></script>
+       
         <!-- jquery.appear -->
         <script src="js/jquery.appear.js"></script>
           <script src="js/javascript.js"></script>
